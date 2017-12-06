@@ -1,0 +1,42 @@
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#addTrain {
+	margin-top: 40px;
+}
+
+.wrapper {
+	background-image: url("images/roadhogwarts2.jpg")
+	
+}
+
+.container {
+	opacity: .75;
+}
+
+.jumbotron {
+	background-image: url("images/viaduct.jpg");
+	
+}
+
+#top {
+	margin-bottom: 0px;
+}
+
+
+
+#banner {
+	color: #fff;
+	margin-bottom: none;
+}
+
+#cardTitle {
+	background: #777;
+	color: #eee;
+
+}
