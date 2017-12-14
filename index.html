@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <!-- css  -->
   <link rel="stylesheet" type="text/css" href="assets/style.css">
-
+  <!-- adding moment -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   
@@ -37,28 +40,8 @@
             <th scope="col">Minutes Away</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+        <tbody id="dataWrapper">
+          
         </tbody>
       </table>
   </div>
@@ -73,23 +56,23 @@
     </div>
     <div class="card-body">
       <div class="form-group">
-        <label for="exampleInputEmail1">Train Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Train Name">
+        <label for="trainName">Train Name</label>
+        <input type="text" class="form-control" id="trainName">
       </div>
       <div class="form-group">
-        <label for="exampleInputEmail1">Destination</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Destination">
+        <label for="trainDestination">Train Desitination</label>
+        <input type="text" class="form-control" id="trainDestination">
       </div>
       <div class="form-group">
-        <label for="exampleInputEmail1">Time</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Time">
+        <label for="firstTrainTime">First Train Time military (hh:mm)</label>
+        <input type="text" class="form-control" id="firstTrainTime">
       </div>
       <div class="form-group">
-        <label for="exampleInputEmail1">Frequency</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Frequency">
+        <label for="monthlyRate">Frequency (min) </label>
+        <input type="number" class="form-control" id="trainFrequency">
       </div>
       
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
     
     </div>
   </div>
