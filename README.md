@@ -1,3 +1,5 @@
 # Hogwarts Train Schedule
 
-![alt text](/assets/images/Screen Shot 2018-03-29 at 4.41.38 PM.png)
+Pulling data from Firebase and Loading it Dynamically in the DOM
+
+https://crossaaron.github.io/Hogwarts-Train-Schedule/
