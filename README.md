@@ -1,3 +1,3 @@
 # Hogwarts Train Schedule
 
-![alt text](../images/icon48.png "Landing Page")
+![alt text](assets/images/Screen Shot 2018-03-29 at 4.41.38 PM.png "Landing Page")
